@@ -45,7 +45,7 @@ describe('express_authentication_middleware_basics', () => {
         }, 500);
     });
 
-    it('Should generate 5 unique API Keys', done => {
+    it.skip('Should generate 5 unique API Keys', done => {
         let n = 5;
         for (let i = 0; i < n; i++) {
             keyStore(req, res);
